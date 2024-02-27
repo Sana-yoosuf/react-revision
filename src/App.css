@@ -59,3 +59,23 @@
   margin-top: 15px;
   margin-right: 3px;
 }
+.input{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+
+}
+.input-field{
+  padding: 7px;
+  margin: 3px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+  width: 30%;
+}
+.input-box{
+  display: flex;
+  flex-direction: column;
+ 
+}

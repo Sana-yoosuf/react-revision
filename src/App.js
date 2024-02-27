@@ -1,6 +1,7 @@
 
 import './App.css';
 import Header from './components/Header';
+import Input from './components/Input ';
 
 import ProductList from './components/ProductList';
 
@@ -9,6 +10,7 @@ function App() {
     <>
     <Header/>
     <ProductList/>
+    <Input/>
     
     </>
     
