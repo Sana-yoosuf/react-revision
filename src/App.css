@@ -77,5 +77,16 @@
 .input-box{
   display: flex;
   flex-direction: column;
+  padding: 20px;
  
+}
+.data{
+  padding: 20px;
+  background-color: grey;
+ 
+  width: fit-content;
+  margin: 10px;
+ 
+
+
 }
