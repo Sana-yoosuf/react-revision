@@ -6,6 +6,7 @@ import Input from './components/Input ';
 import Mapping from './components/Mapping';
 
 import ProductList from './components/ProductList';
+import UpdateState from './components/UpdateState';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Input/>
     <Mapping/>
     <Effecthook/>
+    <UpdateState/>
     
     </>
     
