@@ -49,16 +49,20 @@ const Mapping = () => {
         <h4>Our main products</h4>
       </div>
 
-      {products.map((product) => {
+<div className="main">
+
+{products.map((product) => {
         return (
-          <div style={{ display: "flex" }}>
+          
             <div className="data" key={product.id}>
               <h3>{product.name}</h3>
               <p>{product.Price}</p>
             </div>
-          </div>
+         
         );
       })}
+</div>
+      
     </div>
   );
 };

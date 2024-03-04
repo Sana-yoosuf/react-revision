@@ -1,5 +1,6 @@
 
 import './App.css';
+import Effecthook from './components/Effecthook';
 import Header from './components/Header';
 import Input from './components/Input ';
 import Mapping from './components/Mapping';
@@ -13,6 +14,7 @@ function App() {
     <ProductList/>
     <Input/>
     <Mapping/>
+    <Effecthook/>
     
     </>
     
