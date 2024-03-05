@@ -1,6 +1,7 @@
 
 import './App.css';
 import Effecthook from './components/Effecthook';
+import Formhandling from './components/Formhandling';
 import Header from './components/Header';
 import Input from './components/Input ';
 import Mapping from './components/Mapping';
@@ -12,11 +13,19 @@ function App() {
   return (
     <>
     <Header/>
+   <hr/>
     <ProductList/>
+    <hr/>
     <Input/>
+    <hr/>
     <Mapping/>
+    <hr/>
     <Effecthook/>
+    <hr/>
     <UpdateState/>
+    <hr/>
+    <Formhandling/>
+    
     
     </>
     

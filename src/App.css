@@ -1,54 +1,47 @@
-
-.header{
+.header {
   background-color: grey;
   display: flex;
   justify-content: space-between;
   padding: 15px;
-
 }
-.logo{
+.logo {
   padding: 20px;
   font-size: 30px;
   font-weight: bold;
   color: white;
   cursor: pointer;
 }
-.menu{
+.menu {
   display: flex;
- 
-  
 }
-.menu li{
- 
- list-style: none;
- padding: 10px;
- margin-right: 20px;
- color: #fff;
- 
+.menu li {
+  list-style: none;
+  padding: 10px;
+  margin-right: 20px;
+  color: #fff;
 }
-.menu li:hover{
+.menu li:hover {
   color: #cfcfcf;
   cursor: pointer;
 }
 
-.product{
- width: fit-content;
+.product {
+  width: fit-content;
   padding: 20px;
- margin: 10px;
- background-color: #cfcfcf;
-
+  margin: 10px;
+  background-color: #cfcfcf;
 }
-.heading{
+.heading {
   display: flex;
- font-size: 30px;
+  font-size: 30px;
   justify-content: center;
 }
-.productlist{
+.productlist {
   width: 100%;
   display: flex;
 }
 
-.btn{
+.btn {
   padding: 5px;
   font-size: 20px;
   color: #c6c4c4;
@@ -59,49 +52,53 @@
   margin-top: 15px;
   margin-right: 3px;
 }
-.input{
+.input {
   display: flex;
   font-size: 30px;
   justify-content: center;
-
 }
-.input-field{
+.input-field {
   padding: 7px;
   margin: 3px;
   font-size: 15px;
   border-radius: 5px;
   border: 1px solid gray;
   outline: none;
-  width: 30%;
+  width: fit-content;
 }
-.input-box{
+.input-box {
   display: flex;
   flex-direction: column;
   padding: 20px;
- 
 }
-.data{
+.data {
   padding: 20px;
   background-color: grey;
- 
+
   width: fit-content;
   margin: 10px;
- 
-
-
 }
-.user{
+.user {
   width: 20%;
   padding: 20px;
   margin: 10px;
   background-color: lightgray;
- 
 }
-.main{
+.main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.color{
+.color {
   color: red;
 }
+hr {
+  border-top: 1px solid rgb(174, 172, 172);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* .data-form {
+  background-color: lightgray;
+  padding: 20px;
+  width: fit-content;
+} */

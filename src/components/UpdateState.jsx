@@ -11,7 +11,7 @@ const UpdateState = () => {
   console.log( arr2)
 
   const [name, setName] = useState("Sana");
-  const [myName,setMyName]=useState("Sana")
+  const [myName,setMyName]=useState(["Sana", "Hasi", "Tuttu",])
   const [animals, setAnimals] = useState(["Lion", "Cheetha", "Hyna", "jaguar"]);
 
 
@@ -23,7 +23,7 @@ const UpdateState = () => {
   }
   function addnewname(){
     setMyName((value)=>{
-      return value+"Hasi"
+      return [value+"Hasi"]
     })
   }
   return (
