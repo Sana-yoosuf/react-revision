@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 
 const UpdateState = () => {
-  const [name, setName] = useState("sana");
+
+  let arr=[34,54,23,67,65]
+  let arr2= [...arr,46,57,89999]
+  arr[2]=100
+  
+  console.log(arr)
+  console.log("array 1")
+  console.log( arr2)
+
+  const [name, setName] = useState("Sana");
+  const [myName,setMyName]=useState("Sana")
   const [animals, setAnimals] = useState(["Lion", "Cheetha", "Hyna", "jaguar"]);
 
 
@@ -10,8 +20,11 @@ const UpdateState = () => {
     copyAnimals.push("Deer");
     console.log(animals)
     setAnimals(copyAnimals)
-  
-
+  }
+  function addnewname(){
+    setMyName((value)=>{
+      return value+"Hasi"
+    })
   }
   return (
     <div>
@@ -28,6 +41,8 @@ const UpdateState = () => {
         >
           Click Me
         </button>
+          <h2 style={{color:"green"}}>{myName}</h2>
+        <button onClick={addnewname} className="btn">Add New Name</button>
       </div>
 
       <div style={{ display: "flex",flexDirection:"column",alignItems:"center"}}>

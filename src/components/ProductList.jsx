@@ -32,13 +32,13 @@ const ProductList = () => {
     <>
       <h1 className="heading">Available Products</h1>
 
-      <div className="productlist">
-        {products.map((product) => {
+      <div className="productlist" >
+        {products.map((product,index) => {
           return (
             <Product
               name={product.name}
               price={product.price}
-              url={product.url}
+              url={product.url}key={index}
             />
           );
         })}
