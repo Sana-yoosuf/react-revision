@@ -1,37 +1,45 @@
 import React, { useState } from "react";
 
 const Formhandling = () => {
-  const [name, setName] = useState("Sana");
-  const [email, setEmail] = useState("");
+  const [details, setDetails] = useState({});
+ 
+function handleInput(event){
+  setDetails((prevObj)=>{
+    return {...prevObj,[event.target.name]:event.target.value}
+  })
 
-  function handleName(event) {
-    setName(event.target.value);
-  }
+  
+}
 
-  function handleEmail(event) {
-    setEmail(event.target.value)
-  }
+function handleSubmit(){
+  console.log({details})
+}
+  
+
+
   return (
     <div>
       <div className="heading">
         <h4>Form Handling</h4>
       </div>
       <div className="input-box input">
-        <h3>{name}</h3>
+        
         <input
           className="input-field"
           type="text"
-          onChange={handleName}
+          onChange={handleInput}
           placeholder="Enter yoyr Name"
-          value={name}
+          name="name"
         />
-        <p>{email}</p>
+        
         <input
           className="input-field"
           type="email"
           placeholder="Enter your Email"
-          onChange={handleEmail}
+          onChange={handleInput}
+          name="email"
         />
+        <button className="btn" onClick={handleSubmit}>Submit</button>
       </div>
     </div>
   );
