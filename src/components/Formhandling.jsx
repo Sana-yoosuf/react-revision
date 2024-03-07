@@ -2,20 +2,16 @@ import React, { useState } from "react";
 
 const Formhandling = () => {
   const [details, setDetails] = useState({});
- 
-function handleInput(event){
-  setDetails((prevObj)=>{
-    return {...prevObj,[event.target.name]:event.target.value}
-  })
 
-  
-}
+  function handleInput(event) {
+    setDetails((prevObj) => {
+      return { ...prevObj, [event.target.name]: event.target.value };
+    });
+  }
 
-function handleSubmit(){
-  console.log({details})
-}
-  
-
+  function handleSubmit() {
+    console.log({ details });
+  }
 
   return (
     <div>
@@ -23,7 +19,6 @@ function handleSubmit(){
         <h4>Form Handling</h4>
       </div>
       <div className="input-box input">
-        
         <input
           className="input-field"
           type="text"
@@ -31,7 +26,7 @@ function handleSubmit(){
           placeholder="Enter yoyr Name"
           name="name"
         />
-        
+
         <input
           className="input-field"
           type="email"
@@ -39,7 +34,9 @@ function handleSubmit(){
           onChange={handleInput}
           name="email"
         />
-        <button className="btn" onClick={handleSubmit}>Submit</button>
+        <button className="btn" onClick={handleSubmit}>
+          Submit
+        </button>
       </div>
     </div>
   );

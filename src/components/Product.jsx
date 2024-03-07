@@ -32,6 +32,7 @@ const Product = (props) => {
         Buy Me
       </button>
       <p>{available}</p>
+     
     </div>
   );
 };

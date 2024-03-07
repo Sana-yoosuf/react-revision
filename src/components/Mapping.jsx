@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Mapping = () => {
   let products = [
     {
@@ -49,20 +50,19 @@ const Mapping = () => {
         <h4>Our main products</h4>
       </div>
 
-<div className="main">
-
-{products.map((product) => {
-        return (
-          
+      <div className="main">
+        {products.map((product) => {
+          return (
             <div className="data" key={product.id}>
               <h3>{product.name}</h3>
               <p>{product.Price}</p>
             </div>
-         
-        );
-      })}
-</div>
+          );
+        })}
+      </div>
       
+      
+     
     </div>
   );
 };
