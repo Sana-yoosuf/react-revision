@@ -111,3 +111,24 @@ hr {
   text-decoration: none;
   
 }
+.context{
+  padding: 10px;
+  width: 50%;
+  height: 300px;
+  background-color: #686666;
+  margin-bottom: 50px;
+}
+.conchild{
+  padding: 10px;
+  width: 50%;
+  height: 230px;
+  background-color: #f1f5bb;
+  border-radius: 5px;
+}
+.conchild1{
+  padding: 10px;
+  width: 50%;
+  height: 150px;
+  background-color: #c1ff8a;
+  border-radius: 5px;
+}

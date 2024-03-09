@@ -12,10 +12,20 @@ import Registration from "./components/Registration";
 import UpdateState from "./components/UpdateState";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact";
+import Context from "./components/Context";
+import { createContext, useState} from "react";
+
+export const NameContext= createContext()
 
 function App() {
+  const [username,setUsername]=useState("Sana")
   return (
+    
     <>
+  <NameContext.Provider value={username}>
+
+ 
+  
       <BrowserRouter>
         <Header />
 
@@ -39,7 +49,9 @@ function App() {
         <hr />
 
         <Formhandling />
+        <Context/>
       </BrowserRouter>
+      </NameContext.Provider>
     </>
   );
 }
